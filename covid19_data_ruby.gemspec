@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.version     = '0.0.0'
   s.summary     = "This is Covid19Data"
   s.authors     = ["Jillian Somera"]
-  s.files       = ["lib/covid19_data_ruby.rb"]
+  s.files       = `git ls-files`.split("\n")
 ### WARNING ###
   s.homepage    = 'https://github.com/jaerodyne/covid19_data_ruby'
   s.license     = 'MIT' 
