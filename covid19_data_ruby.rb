@@ -13,7 +13,6 @@ class Covid19Data < ActiveRecord::Base
       uri = URI(BASE_URL + 'locations')
       get_json_data(uri)
     end
-    
       
     def find_by_country_code(country_code, with_timelines=false)
       timelines = with_timelines ? '&timelines=true' : ''
