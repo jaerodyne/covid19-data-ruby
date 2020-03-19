@@ -1,6 +1,7 @@
+require 'json'
 require 'net/http'
 
-class Covid19Data < ActiveRecord::Base
+class Covid19Data
   BASE_URL = 'https://coronavirus-tracker-api.herokuapp.com/v2/'
 
   class << self
