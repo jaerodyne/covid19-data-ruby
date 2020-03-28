@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cov19_data_ruby
+    $ gem install covid19_data_ruby
 
 ## Usage
 
