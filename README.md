@@ -7,7 +7,7 @@ A Ruby wrapper for the [Coronavirus Tracker API](https://github.com/ExpDev07/cor
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cov19_data_ruby'
+gem 'covid19_data_ruby'
 ```
 
 And then execute:
