@@ -1,6 +1,6 @@
 ## Covid19Data-Ruby
 
-A Ruby wrapper for the [Coronavirus Tracker API](https://github.com/ExpDev07/coronavirus-tracker-api), which by default takes data directly from the [Coronavirus (nCoV) Data Repository](https://github.com/CSSEGISandData/COVID-19), provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). An alternative data source pulls from U.S. County data that comes from the Conference of State Bank Supervisors.
+A Ruby wrapper for the [Coronavirus Tracker API](https://github.com/ExpDev07/coronavirus-tracker-api), which by default takes data directly from the [Coronavirus (nCoV) Data Repository](https://github.com/CSSEGISandData/COVID-19), provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). An alternative data source can be specified and will instead pull from the U.S. County data that comes from the Conference of State Bank Supervisors.
 
 ## Installation
 
@@ -25,7 +25,7 @@ Covid19Data.get_sources
 => {"sources"=>["jhu", "csbs"]}
 ```
 
-By default, the source for each of the following methods is set to 'jhu'. If you want to use U.S. county data instead, use 'csbs'.
+By default, the source for each of the following methods is set to `'jhu'`. If you want to use U.S. county data instead, use `'csbs'`.
 
 Get the latest amount of total confirmed cases, deaths, and recoveries globally:
 ```ruby
@@ -41,7 +41,7 @@ Covid19Data.get_all_locations
 
 Find case data by [country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) with an optional argument to include timelines:
 ```ruby
-Covid19Data.find_by_country_code('US', true)
+Covid19Data.find_by_country_code('US', with_timelines: true)
 ```
 
 Find case data by location:
