@@ -19,18 +19,18 @@ Or install it yourself as:
     $ gem install covid19_data_ruby
 
 ## Usage
-Get an array of the latest data sources, which you can later pass in as an optional argument to all the other class methods:
+Get an array of the latest data sources, which you can later pass in as an optional named argument to all the other class methods:
 ```ruby
 Covid19Data.get_sources
 => {"sources"=>["jhu", "csbs"]}
 ```
 
-By default, the source for each of the following methods is set to `'jhu'`. If you want to use U.S. county data instead, use `'csbs'`.
+By default, the source for each of the following methods is set to `'jhu'`. If you want to use U.S. county data instead, use `'source: csbs'`.
 
 Get the latest amount of total confirmed cases, deaths, and recoveries globally:
 ```ruby
 Covid19Data.get_latest
-# optional source argument
+# optional source argument to use csbs
 Covid19Data.get_latest(source: 'csbs')
 ```
 
