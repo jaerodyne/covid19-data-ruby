@@ -1,8 +1,17 @@
 require 'spec_helper'
-require_relative '../../lib/covid19_data'
+require_relative '../../lib/covid19_data_ruby'
 
 RSpec.describe Covid19Data do
-  describe '.latest_data' do
+  describe '.get_sources' do
+    it 'returns the data sources for the API' do
+      response = subject.class.get_sources
+  
+      expect(response).to_not be_empty
+      expect(response).to have_key('sources')
+    end
+  end
+
+  describe '.get_latest' do
     it 'returns the latest data' do
       response = subject.class.get_latest
   
@@ -32,7 +41,7 @@ RSpec.describe Covid19Data do
     end
 
     it 'returns data for a country with timelines' do
-      response = subject.class.find_by_country_code(us_country_code, true)
+      response = subject.class.find_by_country_code(us_country_code, with_timelines: true)
   
       expect(response).to_not be_empty
       expect(response).to have_key('locations')
