@@ -25,7 +25,7 @@ Covid19Data.get_sources
 => {"sources"=>["jhu", "csbs"]}
 ```
 
-By default, the source for each of the following methods is set to `'jhu'`. If you want to use U.S. county data instead, use `'source: csbs'`.
+By default, the source for each of the following methods is set to `'jhu'`. If you want to use U.S. county data instead, use `source: 'csbs'`.
 
 Get the latest amount of total confirmed cases, deaths, and recoveries globally:
 ```ruby
