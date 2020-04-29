@@ -1,7 +1,6 @@
 require 'spec_helper'
-require_relative '../../lib/covid19_data_ruby'
 
-RSpec.describe Covid19Data do
+RSpec.describe Covid19Data, vcr: true do
   describe '.get_sources' do
     it 'returns the data sources for the API' do
       response = subject.class.get_sources

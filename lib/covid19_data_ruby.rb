@@ -1,3 +1,4 @@
+require 'covid19_data_ruby/version'
 require 'json'
 require 'net/http'
 
