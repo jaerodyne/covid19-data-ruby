@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coronavirus-tracker-api.herokuapp.com/v2/sources
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - coronavirus-tracker-api.herokuapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 02:30:09 GMT
+      Server:
+      - uvicorn
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"sources":["jhu","csbs","nyt"]}'
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 02:30:10 GMT
+recorded_with: VCR 5.1.0

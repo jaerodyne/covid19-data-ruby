@@ -13,4 +13,11 @@ Gem::Specification.new do |s|
   s.license     = 'MIT' 
   s.description = "A Ruby wrapper for the coronavirus API at https://github.com/ExpDev07/coronavirus-tracker-api"
   s.platform      = Gem::Platform::RUBY
+
+  s.add_development_dependency "bundler", "~> 1.16"
+  s.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency "pry"
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "vcr"
+  s.add_development_dependency "webmock"
 end

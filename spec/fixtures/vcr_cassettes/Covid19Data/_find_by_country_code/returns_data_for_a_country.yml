@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://coronavirus-tracker-api.herokuapp.com/v2/locations?country_code=US&source=jhu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - coronavirus-tracker-api.herokuapp.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 29 Apr 2020 02:30:13 GMT
+      Server:
+      - uvicorn
+      Content-Length:
+      - '329'
+      Content-Type:
+      - application/json
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"latest":{"confirmed":988197,"deaths":56259,"recovered":0},"locations":[{"id":225,"country":"US","country_code":"US","country_population":327167434,"province":"","last_updated":"2020-04-29T01:39:45.380550Z","coordinates":{"latitude":"37.0902","longitude":"-95.7129"},"latest":{"confirmed":988197,"deaths":56259,"recovered":0}}]}'
+    http_version: null
+  recorded_at: Wed, 29 Apr 2020 02:30:13 GMT
+recorded_with: VCR 5.1.0
