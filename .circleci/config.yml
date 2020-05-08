@@ -16,3 +16,33 @@ jobs:
             source $BASH_ENV
             gem install bundler
       - ruby/bundle-install
+
+deploy:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
+      
+    working_directory: ~/repo
+    
+    steps:
+      - checkout
+      - run:
+          name: Setup Rubygems
+          command: bash .circleci/setup-rubygems.sh
+      
+      - run:
+          name: Publish to Rubygems
+          command: |
+            gem build covid19_data_ruby.gemspec
+            gem push "covid19_data_ruby-$(git describe --tags).gem"
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - build
+      - deploy:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/
