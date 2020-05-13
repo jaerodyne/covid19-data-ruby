@@ -1,5 +1,5 @@
 ## Covid19Data-Ruby
-[![Gem Version](https://badge.fury.io/rb/covid19_data_ruby.svg)](https://badge.fury.io/rb/covid19_data_ruby) ![semver](https://img.shields.io/badge/semver-2.0.0-blue) ![build](https://img.shields.io/circleci/build/github/jaerodyne/covid19-data-ruby)
+[![Gem Version](https://badge.fury.io/rb/covid19_data_ruby.svg)](https://badge.fury.io/rb/covid19_data_ruby) ![Gem](https://img.shields.io/gem/dt/covid19_data_ruby) ![semver](https://img.shields.io/badge/semver-2.0.0-blue) ![build](https://img.shields.io/circleci/build/github/jaerodyne/covid19-data-ruby)
 
 A Ruby wrapper for the [Coronavirus Tracker API](https://github.com/ExpDev07/coronavirus-tracker-api), which by default takes data directly from the [Coronavirus (nCoV) Data Repository](https://github.com/CSSEGISandData/COVID-19), provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). An alternative data source can be specified and will instead pull from the U.S. County data that comes from the Conference of State Bank Supervisors. The New York Times has also been added as an additional source.
 
