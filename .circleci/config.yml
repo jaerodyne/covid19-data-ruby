@@ -37,7 +37,7 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
       
-    working_directory: ~/repo
+    working_directory: ~/covid19_data_ruby
     
     steps:
       - checkout
@@ -55,8 +55,13 @@ workflows:
   version: 2
   test-deploy:
     jobs:
-      - build
+      - build:
+          filters:  # required since `deploy` has tag filters AND requires `build`
+              tags:
+                only: /.*/
       - deploy:
+          requires:
+            - build
           filters:
             tags:
               only: /.*/
