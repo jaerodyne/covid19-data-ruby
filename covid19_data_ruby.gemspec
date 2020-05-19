@@ -14,10 +14,10 @@ Gem::Specification.new do |s|
   s.description = "A Ruby wrapper for the coronavirus API at https://github.com/ExpDev07/coronavirus-tracker-api"
   s.platform      = Gem::Platform::RUBY
 
-  s.add_development_dependency 'bundler', '~> 1.16'
+  s.add_development_dependency 'bundler', '~> 1.16', '>= 1.16'
   s.add_development_dependency 'rake', '~> 12.3', '>= 12.3.3'
-  s.add_development_dependency 'pry', '~> 0.13.1'
-  s.add_development_dependency 'rspec', '~> 3.9.0'
-  s.add_development_dependency 'vcr', '~> 5.1.0'
-  s.add_development_dependency 'webmock', '~> 3.8.3'
+  s.add_development_dependency 'pry', '~> 0.13.1', '>= 0.13.1'
+  s.add_development_dependency 'rspec', '~> 3.9', '>= 3.9.0'
+  s.add_development_dependency 'vcr', '~> 5.1', '>= 5.1.0'
+  s.add_development_dependency 'webmock', '~> 3.8', '>= 3.8.3'
 end
