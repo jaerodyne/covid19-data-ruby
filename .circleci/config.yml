@@ -48,6 +48,7 @@ jobs:
       - run:
           name: Publish to Rubygems
           command: |
+            gem signin --otp $RUBYGEMS_OTP_KEY
             gem build covid19_data_ruby.gemspec
             gem push "covid19_data_ruby-$(git describe --tags).gem"
 
@@ -67,3 +68,4 @@ workflows:
               only: /.*/
             branches:
               ignore: /.*/
+          context: ruby_gems #set in circleci dashboard under org settings
