@@ -11,7 +11,7 @@ GEM
     nokogiri (1.11.0.rc2)
       mini_portile2 (~> 2.5.0)
     public_suffix (4.0.5)
-    rack (2.0.9)
+    rack (2.1.4)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -25,6 +25,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.3)
+    rspec_junit_formatter (0.4.1)
+      rspec-core (>= 2, < 4, != 2.12.0)
     safe_yaml (1.0.5)
     vcr (5.1.0)
     webmock (3.8.3)
@@ -37,10 +39,11 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri (~> 1.11.0.rc2)
-  rack (~> 2.0.1)
+  rack (~> 2.1.4)
   rspec (~> 3.9.0)
-  vcr
-  webmock
+  rspec_junit_formatter (~> 0.4.1)
+  vcr (~> 5.1.0)
+  webmock (~> 3.8.3)
 
 RUBY VERSION
    ruby 2.7.0p0
