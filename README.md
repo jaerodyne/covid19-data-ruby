@@ -3,6 +3,9 @@
 
 A Ruby wrapper for the [Coronavirus Tracker API](https://github.com/ExpDev07/coronavirus-tracker-api), which by default takes data directly from the [Coronavirus (nCoV) Data Repository](https://github.com/CSSEGISandData/COVID-19), provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). An alternative data source can be specified and will instead pull from the U.S. County data that comes from the Conference of State Bank Supervisors. The New York Times has also been added as an additional source.
 
+## Rubygems Page
+https://rubygems.org/gems/covid19_data_ruby
+
 ## Installation
 
 Add this line to your application's Gemfile:
