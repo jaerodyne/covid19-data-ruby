@@ -3,7 +3,7 @@ ruby '>= 2.4.1'
 
 group :development, :test do
   gem 'nokogiri', '~> 1.11.0.rc2'
-  gem 'rack', '~> 2.1.4'
+  gem 'rack', '~> 2.2.6'
   gem 'rspec', '~> 3.9.0'
   gem 'rspec_junit_formatter', '~> 0.4.1'
   gem 'vcr', '~> 5.1.0'
