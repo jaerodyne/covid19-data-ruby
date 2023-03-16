@@ -11,7 +11,7 @@ GEM
     nokogiri (1.11.0.rc2)
       mini_portile2 (~> 2.5.0)
     public_suffix (4.0.5)
-    rack (2.1.4)
+    rack (2.2.6.4)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -39,7 +39,7 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri (~> 1.11.0.rc2)
-  rack (~> 2.1.4)
+  rack (~> 2.2.6)
   rspec (~> 3.9.0)
   rspec_junit_formatter (~> 0.4.1)
   vcr (~> 5.1.0)
